@@ -1,0 +1,537 @@
+@import url("https://rsms.me/inter/inter.css");
+@-webkit-keyframes spin-infinite {
+  0% {
+    stroke-dasharray: 0.01px 43.97px;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(450deg);
+    stroke-dasharray: 21.99px 21.99px;
+  }
+  100% {
+    stroke-dasharray: 0.01px 43.97px;
+    transform: rotate(1080deg);
+  }
+}
+stripe-buy-button {
+  display: block;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+iframe[src*="stripe.com"] {
+  background: transparent !important;
+}
+
+.BuyButton-container {
+  background: none !important;
+}
+
+iframe[src*="stripe.com"] {
+  mix-blend-mode: multiply;
+  background: transparent !important;
+  opacity: 0.9; /* Adjust transparency */
+}
+
+.card {
+  background: transparent !important;
+  margin-top: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 5px;
+}
+.icon-container {
+  display: flex;
+  padding: 16px;
+  justify-content: center; /* Horizontally centers */
+  align-items: center; /* Vertically centers */
+  gap: 12px; /* Space between icons */
+}
+
+.icon-container img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(50%);
+  transition: filter 0.3s ease;
+}
+.icon-left {
+  position: absolute;
+  left: 15px; /* WyrĂłwnanie ikony do lewej */
+}
+.btn {
+  font-size: 14px;
+  border-radius: 8px;
+  padding-left: 40px; /* Miejsce na ikonÄ™ po lewej stronie */
+  padding-right: 40px; /* Miejsce na ikonÄ™ po prawej stronie */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-discord {
+  background: #5865f2;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+}
+
+.btn-discord:hover {
+  background: #4752c4;
+  color: #fff;
+}
+
+.mayalinks {
+  color: #fff;
+}
+
+.mayalinks i {
+  opacity: 0.5;
+}
+.verificado-icon {
+  vertical-align: middle;
+  height: 1.1em; /* Makes it match text size */
+  width: auto; /* Maintains aspect ratio */
+}
+
+.icon-right {
+  position: absolute;
+  right: 15px; /* WyrĂłwnanie ikony do prawej */
+}
+
+.icon-container img:hover {
+  filter: brightness(100%);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --bg-color: #15151a;
+  --text-color: #f1f1f1;
+  --link-bg: #00080e;
+  --link-hover-bg: #061b21;
+  --btn-border: transparent;
+  --pattern: url("square-pattern-dark.svg");
+}
+
+.backblur {
+  backdrop-filter: blur(10px); /* efekt rozmycia tła */
+  -webkit-backdrop-filter: blur(10px); /* dla Safari */
+}
+
+.CheckoutInput {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #15151a !important;
+  border: 0;
+  box-shadow: var(--border-box-shadow);
+  color: var(--checkout-input-color);
+  font-size: var(--checkout-input-font-size);
+  height: var(--checkout-input-height);
+  line-height: var(--checkout-input-line-height);
+  padding: var(--checkout-input-padding-vertical)
+    var(--checkout-input-padding-horizontal);
+  position: relative;
+  transition: var(--checkout-input-transition);
+  width: 100%;
+}
+body {
+  background: linear-gradient(
+    360deg,
+    rgba(153, 0, 80, 1) 0%,
+    rgba(21, 21, 26, 1) 30%
+  );
+
+  background-repeat: repeat;
+  background-position: center;
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 1; /* Możesz zmniejszyć np. 0.7 dla efektu przyciemnienia */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("pattern-square-dark.svg");
+  background-repeat: repeat;
+  opacity: 0.1; /* Możesz dostosować wartość */
+  pointer-events: none; /* Zapobiega klikaniu na pseudo-element */
+}
+
+.bttq {
+}
+
+footer {
+  margin-top: auto;
+  padding: 10px 0;
+}
+
+.widthco {
+  max-width: 350px;
+}
+
+.switcht {
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: #fff !important;
+}
+
+.ebtn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.mwaowo {
+  background: linear-gradient(-45deg, #ffffff, #ff8bd8, #fff, #91c5ff);
+  background-size: 600%;
+  animation: anime 6s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Modal General Styles */
+
+/* Close Button */
+
+/* Footer Buttons */
+
+/* Modal Animations */
+
+/* Responsive Styling */
+
+.banner {
+  background-image: url("mwaowo_b.gif");
+  background-size: cover;
+  background-position: center;
+  height: 130px;
+  position: relative;
+  border-radius: var(--bs-card-border-radius);
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #1e203b;
+  background: #1e203b;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -35px;
+}
+
+.ig {
+  background: linear-gradient(-45deg, #ffa63d, #ff3d77, #338aff, #3cf0c5);
+  background-size: 600%;
+  animation: anime 6s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.btn-instagram {
+  background: linear-gradient(-45deg, #ffa63d, #ff3d77, #ff33f5);
+  background-size: 600%;
+  animation: anime 3s linear infinite;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.btn-instagram:hover {
+  background: linear-gradient(-45deg, #ffa63d, #ff3d77, #ff33f5);
+  background-size: 600%;
+  animation: anime 3s linear infinite;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.btn-threads:hover {
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  background: #000;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.btn-threads {
+  color: #000;
+  border-radius: 3px;
+  border: none;
+  background: #d1d1d1;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.btn-twitch {
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  background: #a970ff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.btn-xwitter {
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  background: #657786;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.btn-xwitter:hover {
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  background: #000;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.btn-twitch:hover {
+  color: #a970ff;
+  border-radius: 3px;
+  border: none;
+  background: #fff;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+
+.btn-nexus {
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  background: #d98f40;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.btn-nexus:hover {
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  background: #a36a2d;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.btn-spotify {
+  color: #000;
+  border-radius: 3px;
+  border: none;
+  background: #1ed760;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.btn-spotify:hover {
+  color: #1ed760;
+  border-radius: 3px;
+  border: none;
+  background: #000;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+a {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.btn {
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.donate {
+  background: linear-gradient(-45deg, #8cd72a, #33d3eb, #dda3ff, #ff7e7e);
+  background-size: 600%;
+  animation: anime 6s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.legend {
+  background: linear-gradient(-45deg, #ffd800, #ffffff, #da9528);
+  background-size: 600%;
+  animation: anime 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.animated-gradient {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: var(--bs-card-border-radius);
+  /* Gradient z przezroczystością */
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  background-size: 200% 200%;
+  background-position: bottom left;
+
+  animation: moveGradient 2s ease-in-out infinite alternate;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: bottom left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+
+/* Kolor tła całego modala */
+.modal-content {
+    background-color: #000; /* ciemne tło */
+    color: #ffffff; /* jasny tekst */
+    border: none;
+    border-radius: 0.75rem;
+}
+
+/* Nagłówek modala */
+.modal-header {
+    background-color: #000;
+    color: #ffffff;
+    border-bottom: 1px solid #444;
+}
+
+/* Tytuł w nagłówku */
+.modal-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+/* Przycisk zamknięcia */
+.btn-close {
+    filter: invert(1); /* biała ikonka X */
+}
+
+/* Ciało modala */
+.modal-body {
+    color: #dcdcdc;
+}
+
+/* Stopka modala */
+.modal-footer {
+    background-color: rgba(0,0,0,0.5);
+    border-top: 1px solid #444;
+}
+
+/* Styl przycisków w stopce */
+.modal-footer .btn {
+    background-color: #d71e1e;
+    color: #fff;
+    border: none;
+}
+
+.modal-footer .btn:hover {
+    background-color: #b21f1f;
+}
+
+   .toplist-box {
+      position: fixed;
+      display: none;
+      width: 300px;
+      max-height: 80vh;
+      overflow-y: auto;
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      margin-top: -250px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      padding: 5px;
+      border-radius: var(--bs-card-border-radius);
+      z-index: 1060; /* wyżej niż modal-dialog (1055) i backdrop (1050) */
+    }
+    .toplist-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .toplist-box li {
+      padding: 5px 0;
+      border-bottom: 1px solid #555;
+    }
+
+    .pfplegend {
+      border-radius: 100%;
+      border: 2px solid #ff9c00;
+    }
+
+    .toplist-extra {
+    text-align: center;
+    margin-top: 10px;
+}
