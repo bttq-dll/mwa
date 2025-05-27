@@ -418,7 +418,7 @@ a {
 }
 
 .legend {
-  background: linear-gradient(-45deg, #ffd800, #ffffff, #da9528);
+  background: linear-gradient(-45deg, #f6bc1e, #ffffff, #f6bc1e);
   background-size: 600%;
   animation: anime 3s linear infinite;
   -webkit-background-clip: text;
@@ -427,7 +427,7 @@ a {
 }
 
 .legend-silver {
-  background: linear-gradient(-45deg, #9b9b9b, #333333, #c7c7c7);
+  background: linear-gradient(-45deg, #c0c0c0, #fff, #c0c0c0);
   background-size: 600%;
   animation: anime 3s linear infinite;
   -webkit-background-clip: text;
@@ -435,7 +435,7 @@ a {
   font-weight: 700;
 }
 .legend-bronze {
-  background: linear-gradient(-45deg, #7c6f69, #814b32, #da9528);
+  background: linear-gradient(-45deg, #fff, #cd2aff, #8cabff);
   background-size: 600%;
   animation: anime 3s linear infinite;
   -webkit-background-clip: text;
@@ -443,11 +443,7 @@ a {
   font-weight: 700;
 }
 .legend-rest {
-  background: linear-gradient(-45deg, #dc8fff, #c95959, #28da96);
-  background-size: 600%;
-  animation: anime 3s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff;
   font-weight: 700;
 }
 
