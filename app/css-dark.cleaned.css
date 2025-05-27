@@ -455,6 +455,30 @@ a {
   color: #28da96;
 }
 
+.text-money-legend {
+  background: linear-gradient(-90deg, #f6bc1e, #f61e1e);
+  background-size: 600%;
+  animation: anime 1s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight:700;
+}
+.text-money-silver {
+  background: linear-gradient(-90deg, #fff, #f6bc1e);
+  background-size: 600%;
+  animation: anime 1s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight:700;
+}
+.text-money-bronze {
+    background: linear-gradient(-90deg, #f6bc1e, #cd2aff);
+  background-size: 600%;
+  animation: anime 1s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
 .animated-gradient {
   width: 100%;
   height: 100%;
