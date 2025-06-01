@@ -85,17 +85,11 @@
      
 <li class="d-flex justify-content-between align-items-center" style="background: url(https://i.imgur.com/ysUstbM.gif); border-bottom: 2px solid #c0c0c0; border-radius: 6px; padding:3px;">
   <span>
-    <img src="https://cdn.discordapp.com/avatars/798234674593529906/621e00416e42f57ca9bcbdf74d8ffe1b.png" width="24px">🤍
-    <span class="legend-silver ms-1">musux</span>
+    <img src="https://static-cdn.jtvnw.net/user-default-pictures-uv/dbdc9198-def8-11e9-8681-784f43822e80-profile_image-300x300.png" width="24px">🤍
+    <span class="legend-silver ms-1">anonymous</span>
   </span>
-  <span class="text-money-silver">$49.99 USD</span>
+  <span class="text-money-silver">$10.00 USD</span>
 </li>
-    
-  <li class="d-flex justify-content-between align-items-center" style="background: url(https://i.imgur.com/SyxJoJ0.gif); border-bottom: 2px solid #cd2aff; border-radius: 6px; padding:3px;">
-    <span><img src="https://static-cdn.jtvnw.net/user-default-pictures-uv/dbdc9198-def8-11e9-8681-784f43822e80-profile_image-300x300.png" width="24px">💜<span class="legend-bronze ms-1">anonymous</span></span>
-    <span class="text-money-bronze">$10.00 USD</span>
-  </li>
-
   <li class="d-flex justify-content-between align-items-center" style=" padding:3px;">
     <span><img src="https://external-preview.redd.it/help-me-start-my-twitch-journey-v0-eOzpIS5Nklm4oZknr50utwLFe8wkagaSk2XfusoIfxc.jpg?auto=webp&s=0b522695247fc15dee512420040af69d435561ff" width="24px">💚<span class="legend-rest ms-1">unknown</span></span>
     <span class="text-money">0 USD</span>
@@ -104,6 +98,13 @@
     <span><img src="https://static-cdn.jtvnw.net/user-default-pictures-uv/ce57700a-def9-11e9-842d-784f43822e80-profile_image-300x300.png" width="24px">💚<span class="legend-rest ms-1">unknown</span></span>
     <span class="text-money">0 USD</span>
   </li>
+  <li class="d-flex justify-content-between align-items-center" style=" padding:3px;">
+  <span>
+    <img src="https://cdn.discordapp.com/avatars/798234674593529906/621e00416e42f57ca9bcbdf74d8ffe1b.png" width="24px">💚
+    <span class="legend-rest ms-1"><s>musux</s><img src="https://i.imgur.com/MZcHQg2.png" data-bs-toggle="tooltip" data-bs-title="This user is blacklisted"></span>
+  </span>
+  <span class="text-money">$0 USD</span>
+</li>      
 </ul>
 </div>
 <script async
@@ -139,7 +140,8 @@
                 stripeFrame.style.background = "transparent";
             }
         });
-
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </Script>
 </body>
 
